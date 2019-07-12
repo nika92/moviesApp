@@ -6,5 +6,5 @@ SDWebImage - This library provides an async image downloader with cache support.
 
 
 
-App is created on MVC pattern, i used standart ios components and some 3rd party libraries. I have not used CoreData for a long time, last time when i worked with it, code was on Objective C, so with swift it was little hard for me and took little more time then it needed, i am not sure if i used code snippets architecturally correctly. 
+App is created on MVC pattern, I've used standard ios components and above mentioned 3rd party libraries. 've used all of the components besides CodeData, and they've never caused any problems. Additionally, I've used CoreData long time ago with ObjectiveC, but never with Swift so it took liitle more time then it needed. Because of that, working with CodeData was a bit difficult for me, and I'm not entirely sure if I'd used it ideally from the architectural side. Overall, the assignment wasn't hard for me.
 
