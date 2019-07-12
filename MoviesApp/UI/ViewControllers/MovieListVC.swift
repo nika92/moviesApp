@@ -82,7 +82,8 @@ class MovieListVC: BaseViewController, UICollectionViewDelegate, UICollectionVie
     @IBAction func segmentedControlAction(_ sender: UISegmentedControl) {
         
         loader.startAnimating()
-        segmentedControl.isUserInteractionEnabled = false
+        segmentedControl.isUserInteractionEnabled   = false
+        collectionView.isHidden                     = true
         
         if sender.selectedSegmentIndex == 0 {
             fetchPopularMovies()
@@ -137,5 +138,8 @@ class MovieListVC: BaseViewController, UICollectionViewDelegate, UICollectionVie
         self.items.removeAll()
         self.items = array
         self.collectionView.reloadData()
+        self.collectionView.isHidden = false
+        
+        self.collectionView?.scrollToItem(at: IndexPath(row: 0, section: 0), at: .top, animated: false)
     }
 }

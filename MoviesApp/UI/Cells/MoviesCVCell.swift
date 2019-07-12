@@ -23,11 +23,4 @@ class MoviesCVCell: UICollectionViewCell {
             movie.posterImg = image ?? UIImage()
         })
     }
-    
-    func setupWithMovie(movie: FavouriteMovie) {
-        posterImgView?.sd_setImage(with: movie.posterPath, placeholderImage: UIImage(named: "placeholder_image"), completed: { (image, error, cacheType, imageURL) in
-            
-//            movie.posterImg = image ?? UIImage()
-        })
-    }
 }

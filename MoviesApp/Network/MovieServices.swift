@@ -13,7 +13,7 @@ import SwiftyJSON
 class MovieServices {
 
     static let BASE_URL = "https://api.themoviedb.org/3"
-    static let API_KEY  = "8df3dc61a3301a8901968f5b008a0e7a"
+    static let API_KEY  = "API_KEY"
     
     static func getPopularMovies(completionHandler: @escaping (JSON) -> (Void), errorHandler: @escaping (String) -> (Void)) {
         
